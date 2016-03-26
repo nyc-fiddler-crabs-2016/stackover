@@ -1,0 +1,13 @@
+<h2>
+  <% if logged_in? %>
+    <%= link_to 'Ask a new question', new_question_path %>
+  <% end %>
+</h2>
+
+<h4>
+  Recent questions
+</h4>
+
+<section>
+ <%= render @questions %>
+</section>
